@@ -11,7 +11,7 @@ function Header() {
         setlanguage(e.target.innerHTML)
     }
     return (
-        <div className='flex justify-between bg-[#282C33] p-4 items-center'>
+        <div className='flex justify-between bg-[#282C33] p-4 items-center container mx-auto'>
             <div className='flex items-center'>
                 <img src={Logo} alt="najaf" />
                 <span className='text-[#fff] font-bold mx-3'>Ali</span>
