@@ -11,7 +11,7 @@ function App() {
     <Header/>
     <Hero/>
     <Quote thingToSay='Turning coffee into code one sip at a time'/>
-    <Divider title='Projects' />
+    <Divider title='Projects' hasMore={true} />
     <ProjectCard />
     </>
   )

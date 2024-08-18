@@ -1,6 +1,6 @@
 import Arrow from '../../assets/images/arrow-white.svg';
 
-function Divider({title}) {
+function Divider({title, hasMore = false}) {
 
     return (
         <div className="flex row justify-between container mx-auto mt-10">
@@ -9,10 +9,12 @@ function Divider({title}) {
                 <p className="text-white bg-background font-bold text-2xl absolute z-20 px-3"><span className="text-primary">#</span>{title}</p>
             </div>
             <div>
-                <button className="rounded-xl border border-primary text-white flex px-2 hover:cursor-pointer">
-                    <span>See More</span>
-                    <img src={Arrow} alt="" className='transform -rotate-90' />
-                </button>
+                {hasMore === true && 
+                    <button className="rounded-xl border border-primary text-white flex px-2 hover:cursor-pointer">
+                        <span>See More</span>
+                        <img src={Arrow} alt="" className='transform -rotate-90' />
+                    </button>
+                }
             </div>
         </div>
     )
