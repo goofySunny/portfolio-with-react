@@ -1,4 +1,5 @@
 import './App.css';
+import About from './components/about/About';
 import Divider from './components/divider/Divider';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
@@ -16,6 +17,8 @@ function App() {
       <ProjectCard />
       <Divider title='Skills'/>
       <Skills />
+      <Divider title='About me' />
+      <About />
     </>
   )
 }
