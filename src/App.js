@@ -19,6 +19,7 @@ function App() {
       <Skills />
       <Divider title='About me' />
       <About />
+      <Divider title='Contacts' />
     </>
   )
 }
